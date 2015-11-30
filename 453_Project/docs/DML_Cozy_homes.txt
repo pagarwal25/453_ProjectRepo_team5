@@ -1,0 +1,437 @@
+/* script name: COZY_HOMES.SQL                           */
+/* purpose:     DML for creating table for the Project   */
+/*                                                       */
+/* date:        29 Nov 2015                              */
+/*                                                       */
+/*                                                       */
+
+/*  make sure tables are empty before entering records   */
+
+
+
+
+
+/* Property Type */
+
+INSERT INTO propertytype VALUES ("A1B1B",  "Apartment (1 Bed, 1 Bath)");
+INSERT INTO propertytype VALUES ("A2B1.5B",  "Apartment (2 Bed, 1.5 Bath)");
+INSERT INTO propertytype VALUES ("A2B2B",  "Apartment (2 Bed, 2 Bath)");
+INSERT INTO propertytype VALUES ("A3B2.5B",  "Apartment (3 Bed, 2.5 Bath)");
+INSERT INTO propertytype VALUES ("A3B3B",  "Apartment (3 Bed, 3 Bath)");
+INSERT INTO propertytype VALUES ("D3B3B",  "Duplex (3 Bed, 3 Bath)");
+INSERT INTO propertytype VALUES ("D4B4B",  "Duplex (4 Bed, 4 Bath)");
+INSERT INTO propertytype VALUES ("D5B5B",  "Duplex (5 Bed, 5 Bath)");
+INSERT INTO propertytype VALUES ("C1B1B",  "Condo (1 Bed, 1 Bath)");
+INSERT INTO propertytype VALUES ("C2B1.5B",  "Condo (2 Bed, 1.5 Bath)");
+INSERT INTO propertytype VALUES ("C2B2B",  "Condo (2 Bed, 2 Bath)");
+INSERT INTO propertytype VALUES ("C3B2.5B",  "Condo (3 Bed, 2.5 Bath)");
+INSERT INTO propertytype VALUES ("C3B3B",  "Condo (3 Bed, 3 Bath)");
+
+/* Property */
+
+INSERT INTO Property VALUES("B1", "Arc at Old Colony", "37 W Van Buren St", "60605", "(312) 582-4180", 4.5);
+INSERT INTO Property VALUES("B2", "Eight O Five", "805 North LaSalle Drive", "60610", "(312) 637-1626", 4.6);
+INSERT INTO Property VALUES("B3", "Presidential Towers", "555 West Madison", "60661", "(312) 462-1834", 5);
+INSERT INTO Property VALUES("B4", "Lake Meadows", "500 East 33rd Street", "60616", "(312) 462-1830", 5);
+INSERT INTO Property VALUES("B5", "The Bernardin", "747 North Wabash Avenue", "60611", "(312) 265-3079", 4.8);
+INSERT INTO Property VALUES("B6", "Hyde Park Tower Apartments", "5140 S Hyde Park Blvd", "60615", "(312) 489-2492", 5);
+INSERT INTO Property VALUES("B7", "Parc Huron River North", "469 West Huron", "60654", "(312) 462-1849", 5);
+INSERT INTO Property VALUES("B8", "Aqua at Lakeshore East", "225 N. Columbus Drive", "60601", "(312) 462-1845", 5);
+INSERT INTO Property VALUES("B9", "The Shoreham", "400 E. South Water Street", "60601", "(312) 462-1838", 4.5);
+INSERT INTO Property VALUES("B10", "The Tides", "360 E. South Water Street", "60601", "(312) 462-1841", 5);
+INSERT INTO Property VALUES("B11", "River North Park", "320 West Illinois Street", "60610", "(312) 462-1833", 5);
+INSERT INTO Property VALUES("B12", "Coast At Lakeshore East", "345 E. Wacker Drive", "60601", "(312) 929-0403", 5);
+INSERT INTO Property VALUES("B13", "Pensacola Place", "4334 North Hazel Street", "60613", "(312) 462-1825", 5);
+INSERT INTO Property VALUES("B14", "One Superior Place", "1 W Superior St,", "60654", "(312) 462-1831", 4.6);
+INSERT INTO Property VALUES("B15", "The Gateway West Loop", "11 S Green St", "60607", "(312) 436-0496", 5);
+INSERT INTO Property VALUES("B16", "The Lex", "2138 S Indiana Avenue", "60601", "(312) 638-2855", 4);
+INSERT INTO Property VALUES("B17", "Wolf Point West", "343 W Wolf Point Plaza", "60654", "(773) 598-8782", 4.6);
+INSERT INTO Property VALUES("B18", "Atwater Apartments", "355 E Ohio S", "60611", "(773) 433-8916", 4);
+INSERT INTO Property VALUES("B19", "Park Michigan Apartments", "1212 South Michigan Avenue", "60616", "(312) 638-2837", 5);
+INSERT INTO Property VALUES("B20", "Astoria Tower", "8 East Ninth Street", "60605", "(312) 638-2867", 4.9);
+INSERT INTO Property VALUES("B21", "Burnham Pointe", "730 South Clark Street", "60605", "(312) 637-1717", 5);
+INSERT INTO Property VALUES("B22", "South Shore Beach Apartments", "7447 South Shore Drive", "60649", "(312) 488-1154", 5);
+INSERT INTO Property VALUES("B23", "The Lofts at Roosevelt Collection", "150 Roosevelt Rd", "60605", "(773) 433-8788", 4.9);
+INSERT INTO Property VALUES("B24", "Cityfront Place", "400 North McClurg Court", "60611", "(312) 462-1853", 4.9);
+INSERT INTO Property VALUES("B25", "Oak Park Place", "479 North Harlem Avenue", "60301", "(708) 469-6026", 4.5);
+INSERT INTO Property VALUES("B26", "EnV Chicago", "161 West Kinzie", "60654", "(312) 448-9165", 4.8);
+INSERT INTO Property VALUES("B27", "OneEleven", "111 W Wacker Dr", "60601", "(224) 585-4859", 4.7);
+INSERT INTO Property VALUES("B28", "Infinite Chicago", "28 E Jackson Boulevard", "60604", "(312) 582-4159", 5);
+INSERT INTO Property VALUES("B29", "Mondial River West", "910 W Huron Street", "60642", "(773) 819-2087", 5);
+
+/* Apartment */
+
+INSERT INTO Apartment VALUES("APT_ID1", "B1", 980 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID2", "B1", 1889 , "10", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID3", "B1", 922 , "10", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID4", "B1", 3441 , "8", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID5", "B2", 1755 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID6", "B2", 4091 , "18", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID7", "B2", 2740 , "12", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID8", "B2", 1989 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID9", "B2", 4151 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID10", "B2", 1269 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID11", "B2", 1976 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID12", "B2", 912 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID13", "B2", 3538 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID14", "B2", 3259 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID15", "B3", 3355 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID16", "B3", 1667 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID17", "B3", 3270 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID18", "B3", 771 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID19", "B3", 4120 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID20", "B3", 3539 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID21", "B3", 3024 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID22", "B3", 3474 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID23", "B4", 771 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID24", "B4", 3495 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID25", "B4", 1266 , "16", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID26", "B4", 1540 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID27", "B4", 3327 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID28", "B4", 1896 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID29", "B4", 3189 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID30", "B4", 724 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID31", "B4", 3272 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID32", "B5", 892 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID33", "B5", 1936 , "14", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID34", "B5", 3200 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID35", "B5", 816 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID36", "B5", 3589 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID37", "B6", 1564 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID38", "B6", 4082 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID39", "B6", 3911 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID40", "B6", 3341 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID41", "B6", 4038 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID42", "B6", 3515 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID43", "B6", 4623 , "24", "D5B5B");
+INSERT INTO Apartment VALUES("APT_ID44", "B6", 3368 , "16", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID45", "B6", 1278 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID46", "B6", 1801 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID47", "B6", 3413 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID48", "B6", 1969 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID49", "B7", 1066 , "18", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID50", "B7", 3429 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID51", "B7", 4181 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID52", "B7", 1485 , "14", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID53", "B7", 3044 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID54", "B7", 3091 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID55", "B7", 3393 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID56", "B7", 3040 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID57", "B7", 929 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID58", "B8", 3942 , "18", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID59", "B8", 3070 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID60", "B8", 1865 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID61", "B8", 3487 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID62", "B8", 4139 , "18", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID63", "B9", 1598 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID64", "B9", 2000 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID65", "B9", 3366 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID66", "B9", 1526 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID67", "B9", 3388 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID68", "B10", 1228 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID69", "B10", 863 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID70", "B10", 1762 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID71", "B10", 3301 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID72", "B11", 2538 , "16", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID73", "B11", 737 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID74", "B11", 1548 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID75", "B11", 3213 , "16", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID76", "B11", 790 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID77", "B12", 1970 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID78", "B12", 2950 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID79", "B12", 993 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID80", "B12", 1459 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID81", "B12", 1607 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID82", "B13", 3296 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID83", "B13", 868 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID84", "B13", 3817 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID85", "B13", 4695 , "24", "D5B5B");
+INSERT INTO Apartment VALUES("APT_ID86", "B13", 4151 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID87", "B13", 2861 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID88", "B13", 3041 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID89", "B14", 770 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID90", "B14", 700 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID91", "B14", 1837 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID92", "B14", 3479 , "12", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID93", "B14", 1589 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID94", "B15", 1689 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID95", "B15", 1243 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID96", "B15", 3030 , "12", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID97", "B15", 1079 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID98", "B16", 3186 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID99", "B16", 3479 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID100", "B16", 4083 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID101", "B16", 3859 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID102", "B16", 5016 , "24", "D5B5B");
+INSERT INTO Apartment VALUES("APT_ID103", "B16", 1500 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID104", "B16", 3041 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID105", "B16", 3421 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID106", "B17", 1989 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID107", "B17", 3935 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID108", "B17", 3336 , "12", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID109", "B17", 4093 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID110", "B17", 1256 , "18", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID111", "B17", 1084 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID112", "B17", 3114 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID113", "B18", 1845 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID114", "B18", 2833 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID115", "B18", 1830 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID116", "B18", 1653 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID117", "B18", 1028 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID118", "B19", 1637 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID119", "B19", 3190 , "16", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID120", "B19", 864 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID121", "B19", 3065 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID122", "B19", 769 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID123", "B19", 3339 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID124", "B20", 1730 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID125", "B20", 3084 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID126", "B20", 1231 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID127", "B20", 1000 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID128", "B20", 1656 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID129", "B20", 1084 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID130", "B21", 1565 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID131", "B21", 1657 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID132", "B21", 899 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID133", "B21", 3011 , "12", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID134", "B21", 1989 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID135", "B22", 867 , "18", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID136", "B22", 3081 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID137", "B22", 1440 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID138", "B22", 3866 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID139", "B22", 4019 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID140", "B22", 3474 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID141", "B22", 3202 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID142", "B22", 3290 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID143", "B23", 1852 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID144", "B23", 785 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID145", "B23", 4174 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID146", "B23", 1280 , "16", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID147", "B23", 2573 , "16", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID148", "B23", 3100 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID149", "B23", 3977 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID150", "B23", 3317 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID151", "B24", 1439 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID152", "B24", 3567 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID153", "B24", 1448 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID154", "B24", 1007 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID155", "B24", 3345 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID156", "B25", 1761 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID157", "B25", 1263 , "16", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID158", "B25", 769 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID159", "B25", 2914 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID160", "B25", 1513 , "116", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID161", "B26", 1787 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID162", "B26", 810 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID163", "B26", 3439 , "12", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID164", "B26", 1793 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID165", "B26", 4113 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID166", "B26", 1300 , "12", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID167", "B26", 2568 , "12", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID168", "B26", 3813 , "24", "D3B3B");
+INSERT INTO Apartment VALUES("APT_ID169", "B27", 886 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID170", "B27", 1567 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID171", "B27", 1498 , "12", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID172", "B27", 3317 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID173", "B27", 1019 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID174", "B28", 3513 , "12", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID175", "B28", 4039 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID176", "B28", 2762 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID177", "B28", 3469 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID178", "B28", 1727 , "14", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID179", "B28", 4006 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID180", "B28", 1212 , "14", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID181", "B28", 1460 , "14", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID182", "B28", 3183 , "18", "A3B3B");
+INSERT INTO Apartment VALUES("APT_ID183", "B28", 1843 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID184", "B29", 965 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID185", "B29", 3211 , "16", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID186", "B29", 774 , "12", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID187", "B29", 1743 , "16", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID188", "B29", 2607 , "18", "A3B2.5B");
+INSERT INTO Apartment VALUES("APT_ID189", "B29", 1605 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID190", "B29", 759 , "8", "A1B1B");
+INSERT INTO Apartment VALUES("APT_ID191", "B29", 4156 , "24", "D4B4B");
+INSERT INTO Apartment VALUES("APT_ID192", "B29", 1949 , "18", "A2B2B");
+INSERT INTO Apartment VALUES("APT_ID193", "B29", 1265 , "18", "A2B1.5B");
+INSERT INTO Apartment VALUES("APT_ID194", "B29", 2581 , "18", "A3B2.5B");
+
+
+/* PropertyUtility */
+
+INSERT INTO propertyutility VALUES("B1","UT1" ,"PAID",  50);
+INSERT INTO propertyutility VALUES("B1","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B1","UT3" ,"PAID",  100);
+INSERT INTO propertyutility VALUES("B1","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B2","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B2","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B2","UT3" ,"PAID",  150);
+INSERT INTO propertyutility VALUES("B3","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B3","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B4","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B4","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B4","UT3" ,"PAID",  200);
+INSERT INTO propertyutility VALUES("B4","UT1" ,"PAID",  75);
+INSERT INTO propertyutility VALUES("B5","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B6","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B6","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B6","UT3" ,"PAID",  100);
+INSERT INTO propertyutility VALUES("B7","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B7","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B7","UT3" ,"PAID",  175);
+INSERT INTO propertyutility VALUES("B7","UT1" ,"PAID",  90);
+INSERT INTO propertyutility VALUES("B8","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B8","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B9","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B9","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B9","UT3" ,"PAID",  150);
+INSERT INTO propertyutility VALUES("B10","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B10","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B10","UT3" ,"PAID",  200);
+INSERT INTO propertyutility VALUES("B11","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B11","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B12","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B13","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B13","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B13","UT3" ,"PAID",  250);
+INSERT INTO propertyutility VALUES("B14","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B15","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B15","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B16","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B16","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B16","UT3" ,"PAID",  150);
+INSERT INTO propertyutility VALUES("B16","UT1" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B17","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B17","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B18","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B18","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B18","UT3" ,"PAID",  175);
+INSERT INTO propertyutility VALUES("B19","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B19","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B20","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B20","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B20","UT3" ,"PAID",  200);
+INSERT INTO propertyutility VALUES("B20","UT1" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B21","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B21","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B22","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B22","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B22","UT3" ,"PAID",  175);
+INSERT INTO propertyutility VALUES("B23","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B23","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B24","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B24","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B24","UT3" ,"PAID",  175);
+INSERT INTO propertyutility VALUES("B25","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B25","UT3" ,"PAID",  200);
+INSERT INTO propertyutility VALUES("B25","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B25","UT1" ,"PAID",  60);
+INSERT INTO propertyutility VALUES("B26","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B27","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B28","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B28","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B28","UT3" ,"PAID",  150);
+INSERT INTO propertyutility VALUES("B29","UT4" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B29","UT2" ,"FREE",  0);
+INSERT INTO propertyutility VALUES("B29","UT3" ,"PAID",  150);
+INSERT INTO propertyutility VALUES("B29","UT1" ,"PAID",  50);
+
+
+/* Utilitytype */
+
+INSERT  INTO utilitytype VALUES("UT1","Swimming Pool");
+INSERT  INTO utilitytype VALUES("UT2","Fitness Center");
+INSERT  INTO utilitytype VALUES("UT3","Parking");
+INSERT  INTO utilitytype VALUES("UT4","Business Center");
+
+
+
+
+/* zipcodeindex */
+INSERT INTO zipcodeindex VALUES("60301",12788,42.8,70.8,79,92,"60301 is the 10th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60601",12511,43.1,75.4,82,91,"60601 is the 11th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60604",849,45.9,67.8,82,98,"60604 is the 3rd most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60605",26338,40.9,56,82,93,"60605 is the 8th most walkable zip code in Chicago");
+INSERT INTO zipcodeindex VALUES("60607",23816,49.9,78.2,80,87,"60607 is the 17th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60610",50828,40.2,67.9,82,95,"60610 is the 7th most walkable zip code in Chicago");
+INSERT INTO zipcodeindex VALUES("60611",30111,43.7,65.9,82,97,"60611 is the 4th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60613",49005,47.8,78.9,78,90,"60613 is the 12th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60615",39986,41.1,71,80,74,"60615 is the 24th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60616",48469,39.9,73.3,75,81,"60616 is the 22nd most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60642",27478,40.8,72.8,82,90,"60642 is the 6th most walkable zip code in Chicago");
+INSERT INTO zipcodeindex VALUES("60649",46127,52.9,70,74,74,"60649 is the 34th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60654",14607,43.8,69.9,82,91,"60654 is the 11th most walkable zip code in Chicago ");
+INSERT INTO zipcodeindex VALUES("60661",7581,38.9,69.3,80,96,"60661 is the 6th most walkable zip code in Chicago ");
+
+
+
+/* Agent Details */
+
+INSERT INTO agentdetails VALUES ('001','Lara','Lele','3','7866548976');
+INSERT INTO agentdetails VALUES ('002','Molly','Doe','5','0156456789');
+INSERT INTO agentdetails VALUES ('003','Kajol','Devgan','3','0000765673');
+INSERT INTO agentdetails VALUES ('004','Joseph','Joe','4','0123456719');
+INSERT INTO agentdetails VALUES ('005','Hu','Cherry','1','0123456781');
+INSERT INTO agentdetails VALUES ('006','Koreth','Hannah','2','0123716789');
+INSERT INTO agentdetails VALUES ('007','Kulkarni','Jane','1','1523456789');
+INSERT INTO agentdetails VALUES ('008','Keith','June','2','0023456789');
+INSERT INTO agentdetails VALUES ('009','April','Tata','5','0003456789');
+INSERT INTO agentdetails VALUES ('010','Spring','Bata','2','0110456789');
+INSERT INTO agentdetails VALUES ('011','Kulkarni','Jane','1','0151756789');
+INSERT INTO agentdetails VALUES ('012','Lovely','Kale','1','0123890789');
+INSERT INTO agentdetails VALUES ('013','Dolly','Samantha','3','0123410189');
+INSERT INTO agentdetails VALUES ('014','Meggy','Rena','4','0123458979');
+INSERT INTO agentdetails VALUES ('015','Bob','Kay','1','0123418589');
+INSERT INTO agentdetails VALUES ('016','John','Hello','3','1853456789');
+INSERT INTO agentdetails VALUES ('017','Tara','Sam','1','0123410189');
+INSERT INTO agentdetails VALUES ('018','Veer','Zara','4','0999665678');
+INSERT INTO agentdetails VALUES ('019','Tilly','Nathan','2','11109811780');
+INSERT INTO agentdetails VALUES ('020','Kelly','Clarkson','3','2223335678');
+INSERT INTO agentdetails VALUES ('021','Merry','Mathur','1','0113456789');
+INSERT INTO agentdetails VALUES ('022','Sarah','Tinku','3','0900765613');
+INSERT INTO agentdetails VALUES ('023','Amir','Kiran','4','0171296719');
+INSERT INTO agentdetails VALUES ('024','Himesh','Reshamiya','2','3223456707');
+INSERT INTO agentdetails VALUES ('025','Jimmy','Chu','5','0123471719');
+INSERT INTO agentdetails VALUES ('026','Chuck','Bass','3','1013491781');
+INSERT INTO agentdetails VALUES ('027','Blair','Woldorf','5','0123471099');
+INSERT INTO agentdetails VALUES ('028','Zalak','Zha','3','1013424381');
+INSERT INTO agentdetails VALUES ('029','Akshay','Govinda','5','0121098719');
+INSERT INTO agentdetails VALUES ('030','Rani','Mukharji','2','1002491781');
+
+
+
+/* Agent Area */
+
+INSERT INTO agentarea VALUES ('001','60601');
+INSERT INTO agentarea VALUES ('002','60601');
+INSERT INTO agentarea VALUES ('003','60609');
+INSERT INTO agentarea VALUES ('004','60601');
+INSERT INTO agentarea VALUES ('005','60602');
+INSERT INTO agentarea VALUES ('006','60603');
+INSERT INTO agentarea VALUES ('007','60603');
+INSERT INTO agentarea VALUES ('008','60603');
+INSERT INTO agentarea VALUES ('009','60604');
+INSERT INTO agentarea VALUES ('010','60605');
+INSERT INTO agentarea VALUES ('011','60605');
+INSERT INTO agentarea VALUES ('012','60605');
+INSERT INTO agentarea VALUES ('013','60606');
+INSERT INTO agentarea VALUES ('014','60607');
+INSERT INTO agentarea VALUES ('015','60607');
+INSERT INTO agentarea VALUES ('016','60608');
+INSERT INTO agentarea VALUES ('017','60610');
+INSERT INTO agentarea VALUES ('018','60610');
+INSERT INTO agentarea VALUES ('019','60611');
+INSERT INTO agentarea VALUES ('020','60612');
+INSERT INTO agentarea VALUES ('021','60301');
+INSERT INTO agentarea VALUES ('022','60613');
+INSERT INTO agentarea VALUES ('023','60615');
+INSERT INTO agentarea VALUES ('024','60616');
+INSERT INTO agentarea VALUES ('025','60642');
+INSERT INTO agentarea VALUES ('026','60649');
+INSERT INTO agentarea VALUES ('027','60654');
+INSERT INTO agentarea VALUES ('028','60654');
+INSERT INTO agentarea VALUES ('029','60661');
+INSERT INTO agentarea VALUES ('030','60661');
+
+
+
